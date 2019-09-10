@@ -128,18 +128,8 @@ public class Log {
         public void print() { }
     }
 
-    //flog
-    public static void flog(Context context, Object... args) { }
-    public static void flog(String file_prefix, Object... args) { }
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    //image save
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    public static void compress(String name, byte[] data) { }
-    public static void compress(String name, Bitmap bmp) { }
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    //life tools
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    //상속트리마지막 위치
+    public static void flog(Object... args) { }
+    public static void compress(Object... args) { }
     public static int po(int priority, String methodNameKey, Object... args) { return -1; }
     public static void sendBroadcast(Class<?> clz, Intent intent) { }
     public static void startService(Class<?> clz, Intent intent) { }
@@ -166,12 +156,8 @@ public class Log {
     public static void startActivityForResult(Class<?> clz, Intent intent, int requestCode, Bundle options) { }
     public static void onItemClick(AdapterView<?> parent, View view, int position, long id) { }
     public static void measure(int widthMeasureSpec, int heightMeasureSpec) { }
-
-    //tools
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public static void printStackTrace() { }
     public static void printStackTrace(Exception e) { }
-    private static long LAST_ACTION_MOVE;
     public static void onTouchEvent(MotionEvent event) {}
     public static void showTable(SQLiteDatabase db) {}
 }
