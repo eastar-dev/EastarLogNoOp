@@ -1,19 +1,24 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
 apply plugin: 'com.github.dcendents.android-maven'
 group = 'com.github.djrain'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 28
-        versionCode 3
-        versionName "3.1.1"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 6
+        versionName "4.0.0"
     }
-}
-
-dependencies {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 // build a jar with source files
