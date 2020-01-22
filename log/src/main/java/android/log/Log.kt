@@ -69,7 +69,7 @@ object Log {
     fun printStackTrace() = Unit
 
     @JvmStatic
-    fun printStackTrace(e: Exception) = Unit
+    fun printStackTrace(e: Throwable) = Unit
 
     @JvmStatic
     fun pn(priority: Int, depth: Int, vararg args: Any?) = Unit
